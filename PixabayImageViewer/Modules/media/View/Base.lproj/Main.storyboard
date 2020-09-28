@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="dEb-bJ-HXp">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3sy-G2-wrp" customClass="HomeViewController" customModule="MVVMRxCoordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bcg-xB-32G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YsF-3t-dXM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YsF-3t-dXM" firstAttribute="trailing" secondItem="p2b-ax-vw9" secondAttribute="trailing" id="EMS-EQ-hcX"/>
+                            <constraint firstItem="YsF-3t-dXM" firstAttribute="top" secondItem="p2b-ax-vw9" secondAttribute="top" id="OzS-dd-dK1"/>
+                            <constraint firstItem="p2b-ax-vw9" firstAttribute="bottom" secondItem="YsF-3t-dXM" secondAttribute="bottom" id="WRD-ge-2ML"/>
+                            <constraint firstItem="YsF-3t-dXM" firstAttribute="leading" secondItem="p2b-ax-vw9" secondAttribute="leading" id="zpD-2A-8gt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p2b-ax-vw9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="w8d-ue-fSs"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="childVCView" destination="YsF-3t-dXM" id="Cu8-sr-r24"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="erA-XB-E1o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5164" y="-133"/>
+        </scene>
+        <!--Media Table View Controller-->
+        <scene sceneID="QmR-8p-Ww8">
+            <objects>
+                <viewController storyboardIdentifier="MediaTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bmE-T1-rwJ" customClass="MediaTableViewController" customModule="MVVMRxCoordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ud1-wX-3jv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j3B-5I-GLe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="j3B-5I-GLe" firstAttribute="top" secondItem="udK-hd-Wgp" secondAttribute="top" id="L5l-3e-2eL"/>
+                            <constraint firstItem="udK-hd-Wgp" firstAttribute="trailing" secondItem="j3B-5I-GLe" secondAttribute="trailing" id="cyc-gi-92o"/>
+                            <constraint firstItem="udK-hd-Wgp" firstAttribute="bottom" secondItem="j3B-5I-GLe" secondAttribute="bottom" id="fSe-nC-Cqe"/>
+                            <constraint firstItem="j3B-5I-GLe" firstAttribute="leading" secondItem="udK-hd-Wgp" secondAttribute="leading" id="kR8-iw-jUV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="udK-hd-Wgp"/>
+                    </view>
+                    <connections>
+                        <outlet property="mediaTableView" destination="j3B-5I-GLe" id="ngp-jd-kWp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GlP-30-5wb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6092" y="-324"/>
+        </scene>
+        <!--Open Image View Controller-->
+        <scene sceneID="h7h-Sk-Mk2">
+            <objects>
+                <viewController storyboardIdentifier="OpenImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zdz-GY-KhT" customClass="OpenImageViewController" customModule="MVVMRxCoordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aME-dt-rek">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goforward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dIZ-1U-qii">
+                                <rect key="frame" x="0.0" y="322" width="375" height="21"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9o7-P3-mfw">
+                                <rect key="frame" x="200" y="24" width="151" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="RFf-mE-rf6"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="multiply.circle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="black"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelBtnAxn:" destination="zdz-GY-KhT" eventType="touchUpInside" id="tZG-gL-SYh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WrJ-ig-EGF" firstAttribute="trailing" secondItem="dIZ-1U-qii" secondAttribute="trailing" id="HiO-8Y-KU8"/>
+                            <constraint firstItem="dIZ-1U-qii" firstAttribute="centerY" secondItem="aME-dt-rek" secondAttribute="centerY" id="Lgn-yS-Jxw"/>
+                            <constraint firstItem="WrJ-ig-EGF" firstAttribute="trailing" secondItem="9o7-P3-mfw" secondAttribute="trailing" constant="24" id="Wjt-rf-a1A"/>
+                            <constraint firstItem="dIZ-1U-qii" firstAttribute="leading" secondItem="WrJ-ig-EGF" secondAttribute="leading" id="cRJ-td-XAJ"/>
+                            <constraint firstItem="9o7-P3-mfw" firstAttribute="top" secondItem="WrJ-ig-EGF" secondAttribute="top" constant="24" id="oZY-Re-U2n"/>
+                            <constraint firstItem="9o7-P3-mfw" firstAttribute="leading" secondItem="WrJ-ig-EGF" secondAttribute="leading" constant="200" id="p1p-KX-PTj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WrJ-ig-EGF"/>
+                    </view>
+                    <connections>
+                        <outlet property="fullImageView" destination="dIZ-1U-qii" id="o8F-df-6ww"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fz-kb-5x3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5219" y="522"/>
+        </scene>
+        <!--Suggetion View Controller-->
+        <scene sceneID="ZnI-yE-UYV">
+            <objects>
+                <viewController storyboardIdentifier="SuggetionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="b3F-BN-V0w" customClass="SuggetionViewController" customModule="MVVMRxCoordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9nV-wz-no8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zd1-By-NBo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="zd1-By-NBo" firstAttribute="top" secondItem="72z-II-z14" secondAttribute="top" id="3Fr-cb-gNB"/>
+                            <constraint firstItem="zd1-By-NBo" firstAttribute="leading" secondItem="72z-II-z14" secondAttribute="leading" id="Juo-OS-o3w"/>
+                            <constraint firstItem="72z-II-z14" firstAttribute="trailing" secondItem="zd1-By-NBo" secondAttribute="trailing" id="aFF-4i-FCk"/>
+                            <constraint firstItem="72z-II-z14" firstAttribute="bottom" secondItem="zd1-By-NBo" secondAttribute="bottom" id="oOa-64-cwR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="72z-II-z14"/>
+                    </view>
+                    <connections>
+                        <outlet property="suggetionTableView" destination="zd1-By-NBo" id="jL6-7Q-hIf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgT-MT-doE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6111" y="349"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="goforward" catalog="system" width="121" height="128"/>
+        <image name="multiply.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
